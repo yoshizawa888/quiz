@@ -1,0 +1,46 @@
+.page-enter-active,
+.page-leave-active {
+	transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+	filter: blur(1rem);
+}
+
+.wrap {
+	max-width: 1100px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 4%;
+	position: relative;
+}
+h1 {
+	text-align: center;
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+.satar-btn {
+	display: block;
+	width: 300px;
+	padding: 35px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-size: 3rem;
+	text-decoration: none;
+	text-align: center;
+	border: solid 2px #222;
+}
+
+.btn {
+	display: block;
+	width: 300px;
+	padding: 15px;
+	text-align: center;
+	font-size: 2rem;
+	border: solid 2px #222;
+}

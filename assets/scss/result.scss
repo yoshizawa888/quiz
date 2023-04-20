@@ -1,0 +1,26 @@
+ul {
+	margin: 60px 0 0;
+}
+
+li {
+	font-size: 2rem;
+	text-align: center;
+	&:not(:first-child) {
+		margin: 40px 0 0;
+		padding: 40px 0 0;
+		border-top: solid 2px #222;
+	}
+}
+
+.btn {
+	margin: 80px auto 0;
+}
+
+.question {
+	margin: 20px 0 0;
+	line-height: 1.75em;
+}
+.answer {
+	margin: 20px 0 0;
+	text-decoration: underline wavy #999;
+}
