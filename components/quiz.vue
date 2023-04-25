@@ -15,7 +15,6 @@ let quizArray: Array<number> = [];
 const router = useRouter();
 
 const amswerClick = () => {
-  console.log(coutntState.value.count);
   if (coutntState.value.count < 2) {
     quizArray.push(random);
 
@@ -32,15 +31,10 @@ const amswerClick = () => {
 }
 
 const checkAnswer = () => {
-  // answerStore.pushStatementr(choiseQuiz.value.question);
   const counter = coutntState.value.count;
-  // console.log(answerState.value);
-  // console.log(counter);
   if (selectedAnswer.value === choiseQuiz.value.answer) {
-    console.log('正解');
     answerStore.pushAnswer(counter, choiseQuiz.value.question, '正解');
   } else {
-    console.log('不正解');
     answerStore.pushAnswer(counter, choiseQuiz.value.question, '不正解');
   }
   counterStore.countUp();
@@ -59,7 +53,6 @@ const checkAnswer = () => {
           </label>
         </li>
       </ul>
-      <!-- <p>{{ selectedAnswer }}</p> -->
       <button class="btn" @click="checkAnswer(), amswerClick()">回答</button>
     </client-only>
   </div>
