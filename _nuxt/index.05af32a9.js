@@ -1,0 +1,1 @@
+import{_ as e}from"./nuxt-link.58f6c046.js";import{m as o,c,w as n,o as a,p as s}from"./entry.996ce218.js";const _={};function r(m,f){const t=e;return a(),c(t,{to:"/game",class:"satar-btn"},{default:n(()=>[s("スタート")]),_:1})}const i=o(_,[["render",r]]);export{i as default};
